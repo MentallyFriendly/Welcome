@@ -8,11 +8,13 @@
 
 #import "AppDelegate.h"
 
+#import "BHAppearanceTheme.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [BHAppearanceTheme applyTheme];
     
     [DataManager loadData];
 
