@@ -9,4 +9,6 @@
 
 +(void)applyTheme;
 
++(NSString*)greetingByTimeOfDay;
+
 @end

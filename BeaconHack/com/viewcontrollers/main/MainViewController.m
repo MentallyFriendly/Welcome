@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 
 #import "BHSettingsViewController.h"
-
+#import "BHAppearanceTheme.h"
 #import "Model.h"
 
 @interface MainViewController ()
@@ -45,7 +45,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	   
+    [self triggerWelcomeNow];
+    
     previousState = CLProximityUnknown;
     currentState = CLProximityUnknown;
     self.stateLabel.text = @"Unknown Proximity";
@@ -125,16 +127,19 @@
 {
     if(currentState != previousState)
     {
-        UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-        localNotification.alertBody = [NSString stringWithFormat:@"WELCOME %@", [[Model sharedInstance].firstname uppercaseString]];
-        
-        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-        
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-        
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"WELCOME" message:[NSString stringWithFormat:@"HEY %@, ENJOY YOUR STAY AT MENTALLY FRIENDLY", [[Model sharedInstance].firstname uppercaseString]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
+        [self triggerWelcomeNow];
     }
+}
+
+-(void) triggerWelcomeNow
+{
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.alertBody = [NSString stringWithFormat:@"%@ %@",
+                                   [BHAppearanceTheme greetingByTimeOfDay],
+                                   [[Model sharedInstance].firstname uppercaseString]];
+    localNotification.soundName = @"bell-ring.caf";
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 @end
