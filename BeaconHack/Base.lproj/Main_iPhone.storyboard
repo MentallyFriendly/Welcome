@@ -39,7 +39,7 @@
                         <viewControllerLayoutGuide type="top" id="qRv-fB-Yul"/>
                         <viewControllerLayoutGuide type="bottom" id="0dn-mn-Xck"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="BHBackgroudUIView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -116,7 +116,7 @@
                         <viewControllerLayoutGuide type="top" id="eTJ-0a-agd"/>
                         <viewControllerLayoutGuide type="bottom" id="kjN-t3-rSF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Enu-yw-vo3">
+                    <view key="view" contentMode="scaleToFill" id="Enu-yw-vo3" customClass="BHBackgroudUIView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -134,7 +134,7 @@
                         <viewControllerLayoutGuide type="top" id="j0Q-pA-6g4"/>
                         <viewControllerLayoutGuide type="bottom" id="FJJ-Vn-wQo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5zl-k4-ehD">
+                    <view key="view" contentMode="scaleToFill" id="5zl-k4-ehD" customClass="BHBackgroudUIView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
