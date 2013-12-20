@@ -26,10 +26,26 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notif
 {
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"WELCOME" message:[NSString stringWithFormat:@"HEY %@, ENJOY YOUR STAY AT MENTALLY FRIENDLY", [[Model sharedInstance].firstname uppercaseString]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    NSString *alertBody = [notif alertBody];
+    
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:nil
+                                                    message:alertBody
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
     [alert show];
     
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    
+    NSString *alertSound = [notif soundName];
+    if(alertSound) {
+        NSString *alertSoundName = [[alertSound pathComponents] firstObject];
+        NSString *alertExtension = [alertSound pathExtension];
+        SystemSoundID soundsID;
+        NSURL *soundURL = [[NSBundle mainBundle] URLForResource:alertSoundName  withExtension:alertExtension];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundsID);
+        AudioServicesPlaySystemSound(soundsID);
+    }
 }
 
 @end

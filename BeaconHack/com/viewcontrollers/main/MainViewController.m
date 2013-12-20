@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 
 #import "BHSettingsViewController.h"
-
+#import "BHAppearanceTheme.h"
 #import "Model.h"
 
 @interface MainViewController ()
@@ -46,6 +46,8 @@
 {
     [super viewDidLoad];
 	   
+    [self triggerWelcomeNow];
+    
     previousState = CLProximityUnknown;
     currentState = CLProximityUnknown;
     self.stateLabel.text = @"Unknown Proximity";
@@ -125,12 +127,19 @@
 {
     if(currentState != previousState)
     {
-        UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-        localNotification.alertBody = [NSString stringWithFormat:@"WELCOME %@", [[Model sharedInstance].firstname uppercaseString]];
-        localNotification.soundName = @"bell-ring.caf";
-        
-        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+        [self triggerWelcomeNow];
     }
+}
+
+-(void) triggerWelcomeNow
+{
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.alertBody = [NSString stringWithFormat:@"%@ %@",
+                                   [BHAppearanceTheme greetingByTimeOfDay],
+                                   [[Model sharedInstance].firstname uppercaseString]];
+    localNotification.soundName = @"bell-ring.caf";
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 @end
