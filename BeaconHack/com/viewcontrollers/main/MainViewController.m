@@ -46,8 +46,6 @@
 {
     [super viewDidLoad];
 	   
-    [self triggerWelcomeNow];
-    
     previousState = CLProximityUnknown;
     currentState = CLProximityUnknown;
     self.stateLabel.text = @"Unknown Proximity";
