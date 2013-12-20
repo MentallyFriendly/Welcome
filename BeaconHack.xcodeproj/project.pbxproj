@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F8D0AA218649F55001F3390 /* BHSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D0AA018649F55001F3390 /* BHSettingsViewController.m */; };
 		2F8D0AA318649F55001F3390 /* BHSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D0AA118649F55001F3390 /* BHSettingsViewController.xib */; };
+		2F8D0AAA1864BE7A001F3390 /* BHAppearanceTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D0AA91864BE7A001F3390 /* BHAppearanceTheme.m */; };
 		C646E5781864B97E00EFDA50 /* BHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C646E5771864B97E00EFDA50 /* BHTextField.m */; };
 		C6FD78E6186467A8007698FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD78E5186467A8007698FC /* Foundation.framework */; };
 		C6FD78E8186467A8007698FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD78E7186467A8007698FC /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 		2F8D0A9F18649F55001F3390 /* BHSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHSettingsViewController.h; path = BHSettingsViewController/BHSettingsViewController.h; sourceTree = "<group>"; };
 		2F8D0AA018649F55001F3390 /* BHSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHSettingsViewController.m; path = BHSettingsViewController/BHSettingsViewController.m; sourceTree = "<group>"; };
 		2F8D0AA118649F55001F3390 /* BHSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BHSettingsViewController.xib; path = BHSettingsViewController/BHSettingsViewController.xib; sourceTree = "<group>"; };
+		2F8D0AA81864BE7A001F3390 /* BHAppearanceTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHAppearanceTheme.h; sourceTree = "<group>"; };
+		2F8D0AA91864BE7A001F3390 /* BHAppearanceTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHAppearanceTheme.m; sourceTree = "<group>"; };
 		C646E5761864B97E00EFDA50 /* BHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHTextField.h; path = com/components/BHTextField.h; sourceTree = "<group>"; };
 		C646E5771864B97E00EFDA50 /* BHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHTextField.m; path = com/components/BHTextField.m; sourceTree = "<group>"; };
 		C6FD78E2186467A8007698FC /* BeaconHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,11 +175,11 @@
 				C6FD7927186494E3007698FC /* com */,
 				C6FD78F4186467A8007698FC /* AppDelegate.h */,
 				C6FD78F5186467A8007698FC /* AppDelegate.m */,
+				2F8D0AA81864BE7A001F3390 /* BHAppearanceTheme.h */,
+				2F8D0AA91864BE7A001F3390 /* BHAppearanceTheme.m */,
 				C6FD7900186467A8007698FC /* Images.xcassets */,
 				2F8D0AA418649F5E001F3390 /* Settings */,
 				C6FD78EC186467A8007698FC /* Supporting Files */,
-				2F8D0AA51864B8EF001F3390 /* BHAppearanceTheme.h */,
-				2F8D0AA61864B8EF001F3390 /* BHAppearanceTheme.m */,
 			);
 			path = BeaconHack;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				C6FD79421864A3EF007698FC /* MainNavController.m in Sources */,
 				C6FD794D1864A5E5007698FC /* DataManager.m in Sources */,
 				C6FD79491864A468007698FC /* ConfigNavController.m in Sources */,
+				2F8D0AAA1864BE7A001F3390 /* BHAppearanceTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
