@@ -8,11 +8,36 @@
 
 #import "ConfigurationViewController.h"
 
+#import "BHSettingsViewController.h"
+
 @interface ConfigurationViewController ()
 
 @end
 
 @implementation ConfigurationViewController
+
+#pragma mark -
+
+-(void)addSettingsButton
+{
+    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
+                                                                                    target:self
+                                                                                    action:@selector(userDidTapSettingsButton)];
+    [[self navigationItem] setRightBarButtonItem:settingsButton animated:NO];    
+}
+
+-(void)userDidTapSettingsButton
+{
+    BHSettingsViewController *settingsViewController = [BHSettingsViewController settingsViewControllerWithStorage:nil];
+ 
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
+    
+    [self presentViewController:navigationController
+                       animated:YES
+                     completion:nil];
+}
+
+#pragma mark -
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +54,8 @@
 	// Do any additional setup after loading the view.
     
     [self.firstname becomeFirstResponder];
+
+    [self addSettingsButton];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
