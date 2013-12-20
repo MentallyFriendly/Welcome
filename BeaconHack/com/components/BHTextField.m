@@ -26,20 +26,12 @@
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.layer.backgroundColor = [UIColor clearColor].CGColor;
     self.layer.borderWidth= 2.0f;
-    self.layer.cornerRadius = 3;
+    self.layer.cornerRadius = 5;
     self.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10,0)];
     self.leftViewMode = UITextFieldViewModeAlways;
     self.rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10,0)];
     self.rightViewMode = UITextFieldViewModeAlways;
+    self.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
