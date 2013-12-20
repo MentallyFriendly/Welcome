@@ -14,6 +14,7 @@
 {
     // Override point for customization after application launch.
     
+    [DataManager saveData];
     [DataManager loadData];
 
     return YES;

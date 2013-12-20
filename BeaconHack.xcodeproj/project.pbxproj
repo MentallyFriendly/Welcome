@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F8D0AA218649F55001F3390 /* BHSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D0AA018649F55001F3390 /* BHSettingsViewController.m */; };
 		2F8D0AA318649F55001F3390 /* BHSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D0AA118649F55001F3390 /* BHSettingsViewController.xib */; };
+		C646E5781864B97E00EFDA50 /* BHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C646E5771864B97E00EFDA50 /* BHTextField.m */; };
 		C6FD78E6186467A8007698FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD78E5186467A8007698FC /* Foundation.framework */; };
 		C6FD78E8186467A8007698FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD78E7186467A8007698FC /* CoreGraphics.framework */; };
 		C6FD78EA186467A8007698FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD78E9186467A8007698FC /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 		2F8D0A9F18649F55001F3390 /* BHSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHSettingsViewController.h; path = BHSettingsViewController/BHSettingsViewController.h; sourceTree = "<group>"; };
 		2F8D0AA018649F55001F3390 /* BHSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHSettingsViewController.m; path = BHSettingsViewController/BHSettingsViewController.m; sourceTree = "<group>"; };
 		2F8D0AA118649F55001F3390 /* BHSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BHSettingsViewController.xib; path = BHSettingsViewController/BHSettingsViewController.xib; sourceTree = "<group>"; };
+		C646E5761864B97E00EFDA50 /* BHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHTextField.h; path = com/components/BHTextField.h; sourceTree = "<group>"; };
+		C646E5771864B97E00EFDA50 /* BHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHTextField.m; path = com/components/BHTextField.m; sourceTree = "<group>"; };
 		C6FD78E2186467A8007698FC /* BeaconHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FD78E5186467A8007698FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6FD78E7186467A8007698FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,15 @@
 				2F8D0AA118649F55001F3390 /* BHSettingsViewController.xib */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		C646E5751864B95700EFDA50 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				C646E5761864B97E00EFDA50 /* BHTextField.h */,
+				C646E5771864B97E00EFDA50 /* BHTextField.m */,
+			);
+			name = components;
 			sourceTree = "<group>";
 		};
 		C6FD78D9186467A8007698FC = {
@@ -208,6 +220,7 @@
 		C6FD7927186494E3007698FC /* com */ = {
 			isa = PBXGroup;
 			children = (
+				C646E5751864B95700EFDA50 /* components */,
 				C6FD794A1864A5C7007698FC /* util */,
 				C6FD793D1864A366007698FC /* navcontrollers */,
 				C6FD7928186494FB007698FC /* viewcontrollers */,
@@ -399,6 +412,7 @@
 				C6FD78F6186467A8007698FC /* AppDelegate.m in Sources */,
 				C6FD78F2186467A8007698FC /* main.m in Sources */,
 				C6FD793C1864A2E1007698FC /* InitialViewController.m in Sources */,
+				C646E5781864B97E00EFDA50 /* BHTextField.m in Sources */,
 				2F8D0AA218649F55001F3390 /* BHSettingsViewController.m in Sources */,
 				C6FD7926186494E0007698FC /* Model.m in Sources */,
 				C6FD792D18649709007698FC /* ConfigurationViewController.m in Sources */,
