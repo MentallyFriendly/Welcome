@@ -27,6 +27,7 @@
     self = [super init];
     if(self)
     {
+        self.isInitialStartUp = YES;
         self.beaconId = 56985;
     }
     

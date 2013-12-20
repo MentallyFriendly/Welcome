@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeaconHack/com/model/Model.h"
-            timestampString = "409245104.937484"
+            timestampString = "409248915.747842"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "beaconId"
             landmarkType = "19">
          </BreakpointContent>

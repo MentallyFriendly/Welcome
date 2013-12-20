@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  BeaconHack
 //
 //  Created by Stephen Chan on 12/20/13.
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate>
+@interface MainViewController : UIViewController <CLLocationManagerDelegate>
 {
     CLProximity previousState;
     CLProximity currentState;
@@ -19,6 +20,6 @@
 @property (strong, nonatomic) CLBeaconRegion *beaconRegion;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
-@property (weak, nonatomic) IBOutlet UITextField* firstName;
+@property (nonatomic, weak) IBOutlet UILabel* stateLabel;
 
 @end

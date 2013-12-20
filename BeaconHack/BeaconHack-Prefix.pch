@@ -15,5 +15,6 @@
     #import <Foundation/Foundation.h>
 
     #import "Model.h"
+    #import "DataManager.h"
 
 #endif

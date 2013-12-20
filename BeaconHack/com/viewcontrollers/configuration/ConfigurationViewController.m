@@ -47,6 +47,12 @@
 {
     [[Model sharedInstance] setFirstname:self.firstname.text];
     [[Model sharedInstance] setLastname:self.lastname.text];
+    [[Model sharedInstance] setIsInitialStartUp:NO];
+    
+    [DataManager saveData];
+    
+    UIViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MainNavController"];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end

@@ -13,6 +13,9 @@
     
 }
 
+
+@property (nonatomic, assign) BOOL isInitialStartUp;
+
 @property (nonatomic, retain) NSString* firstname;
 @property (nonatomic, retain) NSString* lastname;
 

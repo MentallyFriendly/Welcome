@@ -13,7 +13,6 @@
 		C6FD78F0186467A8007698FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6FD78EE186467A8007698FC /* InfoPlist.strings */; };
 		C6FD78F2186467A8007698FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD78F1186467A8007698FC /* main.m */; };
 		C6FD78F6186467A8007698FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD78F5186467A8007698FC /* AppDelegate.m */; };
-		C6FD78FF186467A8007698FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD78FE186467A8007698FC /* ViewController.m */; };
 		C6FD7901186467A8007698FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FD7900186467A8007698FC /* Images.xcassets */; };
 		C6FD7908186467A8007698FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD7907186467A8007698FC /* XCTest.framework */; };
 		C6FD7909186467A8007698FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FD78E5186467A8007698FC /* Foundation.framework */; };
@@ -26,6 +25,11 @@
 		C6FD792D18649709007698FC /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD792C18649709007698FC /* ConfigurationViewController.m */; };
 		C6FD793418649C1E007698FC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FD793018649C1E007698FC /* Main_iPad.storyboard */; };
 		C6FD793518649C1E007698FC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FD793218649C1E007698FC /* Main_iPhone.storyboard */; };
+		C6FD793818649E18007698FC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD793718649E18007698FC /* MainViewController.m */; };
+		C6FD793C1864A2E1007698FC /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD793B1864A2E1007698FC /* InitialViewController.m */; };
+		C6FD79421864A3EF007698FC /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD79411864A3EF007698FC /* MainNavController.m */; };
+		C6FD79491864A468007698FC /* ConfigNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD79481864A468007698FC /* ConfigNavController.m */; };
+		C6FD794D1864A5E5007698FC /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD794C1864A5E5007698FC /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +53,6 @@
 		C6FD78F3186467A8007698FC /* BeaconHack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconHack-Prefix.pch"; sourceTree = "<group>"; };
 		C6FD78F4186467A8007698FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6FD78F5186467A8007698FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C6FD78FD186467A8007698FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C6FD78FE186467A8007698FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C6FD7900186467A8007698FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6FD7906186467A8007698FC /* BeaconHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FD7907186467A8007698FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,6 +67,16 @@
 		C6FD792C18649709007698FC /* ConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationViewController.m; path = com/viewcontrollers/configuration/ConfigurationViewController.m; sourceTree = "<group>"; };
 		C6FD793118649C1E007698FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		C6FD793318649C1E007698FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C6FD793618649E18007698FC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = com/viewcontrollers/main/MainViewController.h; sourceTree = "<group>"; };
+		C6FD793718649E18007698FC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = com/viewcontrollers/main/MainViewController.m; sourceTree = "<group>"; };
+		C6FD793A1864A2E1007698FC /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialViewController.h; path = com/viewcontrollers/initial/InitialViewController.h; sourceTree = "<group>"; };
+		C6FD793B1864A2E1007698FC /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialViewController.m; path = com/viewcontrollers/initial/InitialViewController.m; sourceTree = "<group>"; };
+		C6FD79401864A3EF007698FC /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainNavController.h; path = com/navcontrollers/main/MainNavController.h; sourceTree = "<group>"; };
+		C6FD79411864A3EF007698FC /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainNavController.m; path = com/navcontrollers/main/MainNavController.m; sourceTree = "<group>"; };
+		C6FD79471864A468007698FC /* ConfigNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigNavController.h; path = com/navcontrollers/configuration/ConfigNavController.h; sourceTree = "<group>"; };
+		C6FD79481864A468007698FC /* ConfigNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigNavController.m; path = com/navcontrollers/configuration/ConfigNavController.m; sourceTree = "<group>"; };
+		C6FD794B1864A5E5007698FC /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = com/util/DataManager.h; sourceTree = "<group>"; };
+		C6FD794C1864A5E5007698FC /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = com/util/DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +192,8 @@
 		C6FD7927186494E3007698FC /* com */ = {
 			isa = PBXGroup;
 			children = (
+				C6FD794A1864A5C7007698FC /* util */,
+				C6FD793D1864A366007698FC /* navcontrollers */,
 				C6FD7928186494FB007698FC /* viewcontrollers */,
 				C6FD7923186494A7007698FC /* model */,
 			);
@@ -189,10 +203,9 @@
 		C6FD7928186494FB007698FC /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				C6FD79391864A2CA007698FC /* initial */,
 				C6FD792A186496A7007698FC /* main */,
 				C6FD79291864969B007698FC /* configuration */,
-				C6FD78FD186467A8007698FC /* ViewController.h */,
-				C6FD78FE186467A8007698FC /* ViewController.m */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -209,8 +222,55 @@
 		C6FD792A186496A7007698FC /* main */ = {
 			isa = PBXGroup;
 			children = (
+				C6FD793618649E18007698FC /* MainViewController.h */,
+				C6FD793718649E18007698FC /* MainViewController.m */,
 			);
 			name = main;
+			sourceTree = "<group>";
+		};
+		C6FD79391864A2CA007698FC /* initial */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD793A1864A2E1007698FC /* InitialViewController.h */,
+				C6FD793B1864A2E1007698FC /* InitialViewController.m */,
+			);
+			name = initial;
+			sourceTree = "<group>";
+		};
+		C6FD793D1864A366007698FC /* navcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD79461864A44B007698FC /* configuration */,
+				C6FD793F1864A37B007698FC /* main */,
+			);
+			name = navcontrollers;
+			sourceTree = "<group>";
+		};
+		C6FD793F1864A37B007698FC /* main */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD79401864A3EF007698FC /* MainNavController.h */,
+				C6FD79411864A3EF007698FC /* MainNavController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		C6FD79461864A44B007698FC /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD79471864A468007698FC /* ConfigNavController.h */,
+				C6FD79481864A468007698FC /* ConfigNavController.m */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		C6FD794A1864A5C7007698FC /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD794B1864A5E5007698FC /* DataManager.h */,
+				C6FD794C1864A5E5007698FC /* DataManager.m */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,11 +378,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6FD78FF186467A8007698FC /* ViewController.m in Sources */,
+				C6FD793818649E18007698FC /* MainViewController.m in Sources */,
 				C6FD78F6186467A8007698FC /* AppDelegate.m in Sources */,
 				C6FD78F2186467A8007698FC /* main.m in Sources */,
+				C6FD793C1864A2E1007698FC /* InitialViewController.m in Sources */,
 				C6FD7926186494E0007698FC /* Model.m in Sources */,
 				C6FD792D18649709007698FC /* ConfigurationViewController.m in Sources */,
+				C6FD79421864A3EF007698FC /* MainNavController.m in Sources */,
+				C6FD794D1864A5E5007698FC /* DataManager.m in Sources */,
+				C6FD79491864A468007698FC /* ConfigNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +605,7 @@
 				C6FD7919186467A8007698FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6FD791A186467A8007698FC /* Build configuration list for PBXNativeTarget "BeaconHackTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +614,7 @@
 				C6FD791C186467A8007698FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
