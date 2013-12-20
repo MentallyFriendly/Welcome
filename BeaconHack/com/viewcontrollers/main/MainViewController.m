@@ -8,11 +8,29 @@
 
 #import "MainViewController.h"
 
+#import "BHSettingsViewController.h"
+
+
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
+
+#pragma mark -
+
+-(IBAction)userDidTapSettingsButton:(id)sender
+{
+    BHSettingsViewController *settingsViewController = [BHSettingsViewController settingsViewControllerWithStorage:nil];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
+    
+    [self presentViewController:navigationController
+                       animated:YES
+                     completion:nil];
+}
+
+#pragma mark - 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
