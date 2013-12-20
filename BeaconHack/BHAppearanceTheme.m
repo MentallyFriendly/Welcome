@@ -4,6 +4,7 @@
 //
 
 #import "BHAppearanceTheme.h"
+#import "BHBackgroudUIView.h"
 
 @implementation BHAppearanceTheme
 
@@ -29,7 +30,7 @@ NS_INLINE UIColor* tintColor()
 {
     [[UIButton appearance] setTintColor:tintColor()];
     [[UIBarButtonItem appearance] setTintColor:tintColor()];
-    [[UIView appearance] setBackgroundColor:backgroundColor()];
+    [[BHBackgroudUIView appearance] setBackgroundColor:backgroundColor()];
 }
 
 #pragma mark - 
