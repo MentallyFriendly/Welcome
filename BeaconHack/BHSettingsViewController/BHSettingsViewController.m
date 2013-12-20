@@ -48,9 +48,14 @@
     [[self navigationItem] setLeftBarButtonItem:cancelButton animated:NO];
     
     id<BHSettingsStorageProtocol> storage = [self storage];
-    [[self proximityUUID] setText:[storage proximityUUID]];
-    [[self majorNumber] setText:[storage majorNumberValue]];
-    [[self minorNumber] setText:[storage minorNumberValue]];
+    NSString *proximityUUID = [storage proximityUUID];
+    [[self proximityUUID] setText:proximityUUID];
+    
+    NSString *majorNumber = [storage majorNumberValue];
+    [[self majorNumber] setText:majorNumber];
+    
+    NSString *minorNumber = [storage minorNumberValue];
+    [[self minorNumber] setText:minorNumber];
 }
 
 #pragma mark - 

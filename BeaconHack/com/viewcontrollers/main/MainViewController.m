@@ -8,11 +8,30 @@
 
 #import "MainViewController.h"
 
+#import "BHSettingsViewController.h"
+
+#import "Model.h"
+
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
+
+#pragma mark -
+
+-(IBAction)userDidTapSettingsButton:(id)sender
+{
+    BHSettingsViewController *settingsViewController = [BHSettingsViewController settingsViewControllerWithStorage:[Model sharedInstance]];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
+    
+    [self presentViewController:navigationController
+                       animated:YES
+                     completion:nil];
+}
+
+#pragma mark - 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +53,7 @@
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     
-    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
+    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:[[Model sharedInstance] proximityUUID]];
     
     self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"com.devfright.myRegion"];
     [self.locationManager startMonitoringForRegion:self.beaconRegion];
@@ -67,7 +86,7 @@
     CLBeacon *beacon = nil;
     
     for (CLBeacon* b in beacons) {
-        if([b.major intValue] == [Model sharedInstance].beaconId)
+        if([b.major intValue] == [Model sharedInstance].majorNumber.intValue)
         {
             beacon = b;
         }
