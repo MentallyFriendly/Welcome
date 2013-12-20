@@ -35,12 +35,12 @@
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                 target:self
                                                                                 action:@selector(userDidTapDoneButton)];
-    [[[self navigationController] navigationItem] setRightBarButtonItem:doneButton animated:NO];
+    [[self navigationItem] setRightBarButtonItem:doneButton animated:NO];
 
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                                                 target:self
                                                                                 action:@selector(userDidTapCancelButton)];
-    [[[self navigationController] navigationItem] setLeftBarButtonItem:cancelButton animated:NO];
+    [[self navigationItem] setLeftBarButtonItem:cancelButton animated:NO];
         
     [[self proximityUUID] setText:[[self storage] proximityUUID]];
     [[self majorNumber] setText:[[self storage] majorNumberValue]];

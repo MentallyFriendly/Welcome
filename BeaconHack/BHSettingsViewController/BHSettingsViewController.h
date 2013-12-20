@@ -16,4 +16,6 @@
 
 @interface BHSettingsViewController : UIViewController
 
++(instancetype)settingsViewControllerWithStorage:(id<BHSettingsStorageProtocol>)storage;
+
 @end
