@@ -20,8 +20,15 @@ NS_INLINE UIColor* backgroundColor()
     return UIColorFromRGB(0xf5d500);
 }
 
+NS_INLINE UIColor* tintColor()
+{
+    return UIColorFromRGB(0x000000);
+}
+
 +(void)applyTheme
 {
+    [[UIButton appearance] setTintColor:tintColor()];
+    [[UIBarButtonItem appearance] setTintColor:tintColor()];
     [[UIView appearance] setBackgroundColor:backgroundColor()];
 }
 
