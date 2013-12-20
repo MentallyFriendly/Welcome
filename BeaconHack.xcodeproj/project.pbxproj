@@ -175,6 +175,8 @@
 				C6FD7900186467A8007698FC /* Images.xcassets */,
 				2F8D0AA418649F5E001F3390 /* Settings */,
 				C6FD78EC186467A8007698FC /* Supporting Files */,
+				2F8D0AA51864B8EF001F3390 /* BHAppearanceTheme.h */,
+				2F8D0AA61864B8EF001F3390 /* BHAppearanceTheme.m */,
 			);
 			path = BeaconHack;
 			sourceTree = "<group>";
