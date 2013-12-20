@@ -19,6 +19,11 @@
 -(void)userDidTapDoneButton
 {
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+    
+    id<BHSettingsStorageProtocol> storage = [self storage];
+    [storage setProximityUUID:[[self proximityUUID] text]];
+    [storage setMajorNumberValue:[[self majorNumber] text]];
+    [storage setMinorNumberValue:[[self minorNumber] text]];
 }
 
 -(void)userDidTapCancelButton
@@ -41,10 +46,11 @@
                                                                                 target:self
                                                                                 action:@selector(userDidTapCancelButton)];
     [[self navigationItem] setLeftBarButtonItem:cancelButton animated:NO];
-        
-    [[self proximityUUID] setText:[[self storage] proximityUUID]];
-    [[self majorNumber] setText:[[self storage] majorNumberValue]];
-    [[self minorNumber] setText:[[self storage] minorNumberValue]];
+    
+    id<BHSettingsStorageProtocol> storage = [self storage];
+    [[self proximityUUID] setText:[storage proximityUUID]];
+    [[self majorNumber] setText:[storage majorNumberValue]];
+    [[self minorNumber] setText:[storage minorNumberValue]];
 }
 
 #pragma mark - 

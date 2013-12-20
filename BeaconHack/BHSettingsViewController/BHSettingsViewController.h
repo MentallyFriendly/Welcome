@@ -6,12 +6,12 @@
 #import <UIKit/UIKit.h>
 
 @protocol BHSettingsStorageProtocol
+@required
 @property (nonatomic, copy) NSString *proximityUUID;
 @property (nonatomic, strong) NSNumber *majorNumber;
-@property (nonatomic, readonly, strong) NSString *majorNumberValue;
-
+@property (nonatomic, copy) NSString *majorNumberValue;
 @property (nonatomic, strong) NSNumber *minorNumber;
-@property (nonatomic, readonly, strong) NSString *minorNumberValue;
+@property (nonatomic, copy) NSString *minorNumberValue;
 @end
 
 @interface BHSettingsViewController : UIViewController
