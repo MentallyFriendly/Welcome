@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Squid Ink Games. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h>
+
 #import "AppDelegate.h"
 
 #import "BHAppearanceTheme.h"
@@ -24,7 +26,10 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notif
 {
-  
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"WELCOME" message:[NSString stringWithFormat:@"HEY %@, ENJOY YOUR STAY AT MENTALLY FRIENDLY", [[Model sharedInstance].firstname uppercaseString]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 @end

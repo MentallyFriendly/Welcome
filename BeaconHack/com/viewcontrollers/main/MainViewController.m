@@ -45,7 +45,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	   
     previousState = CLProximityUnknown;
     currentState = CLProximityUnknown;
     self.stateLabel.text = @"Unknown Proximity";
@@ -127,13 +127,9 @@
     {
         UILocalNotification *localNotification = [[UILocalNotification alloc] init];
         localNotification.alertBody = [NSString stringWithFormat:@"WELCOME %@", [[Model sharedInstance].firstname uppercaseString]];
+        localNotification.soundName = @"bell-ring.caf";
         
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-        
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-        
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"WELCOME" message:[NSString stringWithFormat:@"HEY %@, ENJOY YOUR STAY AT MENTALLY FRIENDLY", [[Model sharedInstance].firstname uppercaseString]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
     }
 }
 
